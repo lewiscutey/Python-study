@@ -1,26 +1,17 @@
-"""
-软件安装和配置
-"""
+# 软件安装和配置
 
-"""
-使用包管理工具
-"""
+### 使用包管理工具
 1. yum - Yellowdog Updater Modified。
 2. rpm - Redhat Package Manager。
 
-
-"""
-下载解压配置环境变量
-"""
+### 下载解压配置环境变量
 wget https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-rhel70-3.6.5.tgz
 gunzip mongodb-linux-x86_64-rhel70-3.6.5.tgz
 tar -xvf mongodb-linux-x86_64-rhel70-3.6.5.tar
 export PATH=$PATH:$HOME/bin:$HOME/mongodb-linux-x86_64-rhel70-3.6.5/bin
 mongod --version
 
-"""
-源代码构建安装
-"""
+### 源代码构建安装
 1. 安装Python 3.6。
 
 [root ~]# yum install gcc
@@ -79,9 +70,7 @@ redis-cli 3.2.12
  12. 安全文件传输 - sftp。
 
 
- """
- 进程管理
- """
+ ### 进程管理
  1. 查看进程 - ps。
  2. 显示进程状态树 - pstree。
  3. 查找与指定条件匹配的进程 - pgrep。
@@ -98,9 +87,7 @@ redis-cli 3.2.12
  14. 实时监控进程占用资源状况 - top。
 
 
-"""
-系统诊断
-"""
+### 系统诊断
 1. 系统启动异常诊断 - dmesg。
 2. 查看系统活动信息 - sar。
 3. 查看内存使用情况 - free。
@@ -112,9 +99,7 @@ redis-cli 3.2.12
 9. 显示进程间通信设施的状态 - ipcs。
 
 
-"""
-Shell编程
-"""
+### Shell编程
 例子1：输入两个整数m和n，计算从m到n的整数求和的结果。
 
 #!/usr/bin/bash
@@ -195,9 +180,7 @@ install_redis() {
 install_redis 'http://download.redis.io/releases/' $1
 
 
-"""
-相关资源
-"""
+### 相关资源
 1. Linux命令行常用快捷键
 
 快捷键	功能说明

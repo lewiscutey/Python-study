@@ -23,3 +23,4 @@ urlpatterns = [
     path('', show_subjects),
     path('teachers/', show_teachers),
 ]
+
